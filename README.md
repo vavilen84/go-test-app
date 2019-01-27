@@ -29,6 +29,9 @@ Run manager
 $ docker run -d --name docker-hostmanager --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /etc/hosts:/hosts iamluc/docker-hostmanager
 ```
 
+Beego config don`t support .env vars, so in current implementation all vars (paths, db names, etc) hardcoded. 
+So you need to clone project in /var/www/go-test-app folder to work correct. May be fixed in future.
+
 ## Start with Docker
 
 ```

@@ -10,8 +10,8 @@ services:
       - local
     tty: true
     volumes:
-      - "./src/app:/var/www/beego/src/app"
-    working_dir: /var/www/beego/src/app
+      - "./src/app:/var/www/go-test-app/src/app"
+    working_dir: /var/www/go-test-app/src/app
     ports:
       - 80:8000
 
